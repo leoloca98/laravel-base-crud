@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>Document</title>
 </head>
 
 <body>
-    @foreach ($comics as $comic)
-        <div><a href="{{ route('comics.show', $comic->id) }}">{{ $comic->title }}</a></div>
-    @endforeach
+
+    <br>
+    <div>{{ $comic->title }}</div>
+    <div>{{ $comic->price }}$</div>
+    <div>{{ $comic->series }}</div>
+    <div>{{ $comic->type }}</div>
 </body>
 
 </html>
