@@ -6,9 +6,7 @@
                 @foreach ($comics as $comic)
                     <div class="card">
                         <figure>
-                            <a href="{{ route('details', ['id' => $loop->index]) }}">
-                                <img src="{{ $comic['thumb'] }}" />
-                            </a>
+                            <img src="{{ $comic['thumb'] }}" />
                         </figure>
                         <div class="nameDc">
                             <span class="text-white uppercase">{{ $comic['title'] }}</span>

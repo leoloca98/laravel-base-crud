@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,4 +14,12 @@
     @endforeach
 </body>
 
-</html>
+</html> --}}
+
+@extends('layouts.main')
+
+@section('title', 'Home')
+
+@section('content')
+    @include('includes.content')
+@endsection
