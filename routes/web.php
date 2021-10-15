@@ -13,9 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
+
+Cose da aggiungere all'esercizio
+
+|Fare Rotta Index
+|Fare Rotta Show
+!Fare Rotta Create
+!Fare Rotta Store
+!Fare Rotta Edit
+!Fare Rotta Update
+!Fare Rotta Destroy
+
+*/
 
 
-Route::get('/', 'ComicController@index')->name('home');
+Route::get('/', 'ComicController@index')->name('comics.index');
 Route::get('/comics/{id}', 'ComicController@show')->name('comics.show');
 
 Route::resource('comics', 'ComicController');
