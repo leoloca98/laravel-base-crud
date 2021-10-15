@@ -1,0 +1,47 @@
+#nav-bar-menu {
+    height: 150px;
+    width: 100%;
+    background-color: $Principal-Color;
+    position: relative;
+
+    .row {
+        height: 150px;
+        width: 100%;
+        @include center("vertical");
+        justify-content: space-between;
+
+        .col {
+            height: 100%;
+            width: calc(100% / 5);
+
+            .row-pe {
+                height: 100%;
+                width: 100%;
+                @include center("both");
+
+                .col-4 {
+                    height: 100%;
+                    width: calc(100% / 3);
+                    @include center("both");
+
+                    img {
+                        max-height: 50px;
+                        max-width: 50px;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                .col-8 {
+                    height: 100%;
+                    @include center("vertical");
+                    justify-content: start;
+
+                    span {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

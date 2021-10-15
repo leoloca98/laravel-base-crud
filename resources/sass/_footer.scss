@@ -1,0 +1,49 @@
+#footer {
+    position: relative;
+    height: 117px;
+    width: 100%;
+    background-color: $Footer-Color;
+
+    .row {
+        height: 117px;
+        width: 100%;
+        @include center("vertical");
+        justify-content: space-between;
+
+        .col-1 {
+            height: 100%;
+            width: calc(100% / 2);
+            @include center("vertical");
+            justify-content: flex-start;
+
+            .button {
+                padding: 15px 25px;
+                background-color: $Footer-Color;
+                border: 2px solid $Principal-Color;
+                color: white;
+            }
+        }
+
+        .col-2 {
+            height: 100%;
+            width: calc(100% / 2);
+            @include center("vertical");
+            justify-content: flex-end;
+
+            .text-blue {
+                font-size: 25px;
+                font-weight: 600;
+                margin-right: 30px;
+                color: $Principal-Color;
+            }
+
+            ul {
+                display: flex;
+
+                li {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

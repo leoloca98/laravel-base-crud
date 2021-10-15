@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.main')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <title>Document</title>
-</head>
+@section('title', 'Home')
 
-<body>
-    @foreach ($comic as $element)
-        <br>
-        <div>{{ $element->title }}</div>
-        <div>{{ $element->price }}$</div>
-        <div>{{ $element->series }}</div>
-        <div>{{ $element->type }}</div>
+@section('content')
+    @include('includes.content')
+@endsection
 
-    @endforeach
-</body>
+{{-- @foreach ($comic as $element)
+    <br>
+    <div>{{ $element->title }}</div>
+    <div>{{ $element->price }}$</div>
+    <div>{{ $element->series }}</div>
+    <div>{{ $element->type }}</div>
 
-</html>
+@endforeach --}}

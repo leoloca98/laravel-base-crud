@@ -1,0 +1,75 @@
+#bot-jumbotron {
+    height: 370px;
+    background-image: url("../images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .row {
+        height: 320px;
+        width: 100%;
+        @include center("vertical");
+        justify-content: space-between;
+
+        .col {
+            height: 100%;
+            width: calc(100% / 2);
+            @include center("column");
+
+            .row-between {
+                height: 100%;
+                width: 70%;
+                @include center("vertical");
+                justify-content: start;
+
+                .col-3 {
+                    height: 100%;
+                    width: calc(100% / 3);
+                    @include center("column");
+                    padding-top: 50px;
+                    color: white;
+
+                    .row-column {
+                        height: 100%;
+                        @include center("column");
+
+                        .col-8 {
+                            width: 100%;
+                            @include center("column");
+                            padding-bottom: 30px;
+                            color: white;
+                        }
+
+                        .col-4 {
+                            width: 100%;
+                            @include center("column");
+                            color: white;
+                        }
+                    }
+
+                    h2 {
+                        font-size: 18px;
+                        padding-bottom: 20px;
+                        font-family: Georgia, "Times New Roman", Times, serif;
+                    }
+
+                    li {
+                        line-height: 20px;
+                        a {
+                            color: grey;
+                        }
+                    }
+                }
+            }
+        }
+
+        .col-logo {
+            height: 100%;
+            width: calc(100% / 2);
+            @include center("both");
+
+            img {
+                max-height: 550px;
+            }
+        }
+    }
+}

@@ -11,10 +11,11 @@
 <body>
 
     <br>
-    <div>{{ $comic->title }}</div>
-    <div>{{ $comic->price }}$</div>
-    <div>{{ $comic->series }}</div>
-    <div>{{ $comic->type }}</div>
+    <div><span class="bolder">TITOLO: </span>{{ $comic->title }}</div><br>
+    <div>PREZZO: {{ $comic->price }}$</div><br>
+    <div>TRAMA: {{ $comic->description }}</div><br>
+    <div>COPERTINA: <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}"></div><br>
+    <div>TIPOLOGIA: {{ $comic->type }}</div>
 </body>
 
 </html>

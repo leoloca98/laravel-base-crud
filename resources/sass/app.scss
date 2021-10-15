@@ -1,1 +1,12 @@
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "vars";
+@import "generics";
+@import "utilities";
+@import "mixins";
+@import "blue-line";
+@import "header";
+@import "top-jumbotron";
+@import "content";
+@import "details";
+@import "nav-bar-menu";
+@import "bottom-jumbotron";
+@import "footer";

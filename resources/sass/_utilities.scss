@@ -1,0 +1,78 @@
+/* UTILITIES */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-white {
+    color: white;
+}
+
+.active {
+    color: $Principal-Color;
+    border-bottom: 4px solid $Principal-Color;
+}
+
+hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-right {
+    display: flex;
+    justify-content: end;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.p-center {
+    display: flex;
+    justify-content: center;
+}
+
+.p-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-lh {
+    line-height: 22px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.d-flex {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

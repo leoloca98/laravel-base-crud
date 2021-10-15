@@ -1,0 +1,32 @@
+#nav-bar {
+    height: 120px;
+    width: 100%;
+    background-color: $Header-Color;
+
+    .content {
+        @include center("vertical");
+        height: 120px;
+        width: 1200px;
+
+        img {
+            height: 120px;
+            padding: 20px;
+        }
+
+        .header-menu {
+            @include center("between");
+            padding: 0;
+
+            li {
+                height: 120px;
+                line-height: 120px;
+                font-weight: bold;
+
+                a {
+                    padding: 10px;
+                    padding-bottom: 50px;
+                }
+            }
+        }
+    }
+}

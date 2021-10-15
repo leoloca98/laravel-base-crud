@@ -1,0 +1,21 @@
+@mixin center($type: "both") {
+    display: flex;
+    @if $type == "vertical" {
+        align-items: center;
+    } @else if $type == "horizontal" {
+        justify-content: center;
+    } @else if $type == "between" {
+        justify-content: space-between;
+    } @else if $type == "column" {
+        flex-direction: column;
+    } @else {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+//@include center('both');
+//@include center('horizontal');
+//@include center('vertical');
+//@include center('between');
+//@include center('column');
