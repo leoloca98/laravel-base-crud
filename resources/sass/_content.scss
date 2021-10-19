@@ -31,7 +31,7 @@
             align-items: flex-start;
             flex-wrap: wrap;
 
-            .card {
+            .card-content {
                 display: flex;
                 flex-direction: column;
                 height: 180px;
@@ -58,7 +58,6 @@
 
                     span {
                         font-size: 11px;
-                        padding-top: 10px;
                     }
                 }
             }

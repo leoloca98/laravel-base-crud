@@ -58,7 +58,7 @@ class ComicController extends Controller
 
         $newComic = new Comic;
         $newComic->fill($data);
-        $newComic->slug = Str::slug($newComic->title, '-');
+        // $newComic->slug = Str::slug($newComic->title, '-');
         $newComic->save();
 
         return redirect()->route('comics.show', compact('newComic'));

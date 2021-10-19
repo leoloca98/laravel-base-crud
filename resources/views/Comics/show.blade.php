@@ -27,9 +27,13 @@
 @section('cdns')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 @endsection
+
+{{-- Content --}}
 @section('content')
     @include('includes.info', $comic)
 @endsection
+
+{{-- Script --}}
 @section('scripts')
     <script>
         const deleteButtons = document.querySelectorAll('.delete-button');

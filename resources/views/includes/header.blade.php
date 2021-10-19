@@ -2,7 +2,8 @@
     <div class="container">
         <div class="content">
             <div class="logo">
-                <a href="#"><img alt="DC Logo" src="{{ asset('images/dc-logo.png') }}" /></a>
+                <a href="{{ route('comics.index') }}"><img alt="DC Logo"
+                        src="{{ asset('images/dc-logo.png') }}" /></a>
             </div>
             <div class="menu">
                 <ul class="header-menu">

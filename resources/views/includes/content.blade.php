@@ -4,14 +4,14 @@
             <div class="currentSeries text-white">CURRENT SERIES</div>
             <div class="cdComics-list">
                 @foreach ($comics as $comic)
-                    <div class="card">
+                    <div class="card-content">
                         <figure>
                             <a href="{{ route('comics.show', $comic->id) }}">
-                                <img src="{{ $comic['thumb'] }}" />
+                                <img src="{{ $comic->thumb }}" />
                             </a>
                         </figure>
                         <div class="nameDc">
-                            <span class="text-white uppercase">{{ $comic['title'] }}</span>
+                            <span class="text-white uppercase">{{ $comic->title }}</span>
                         </div>
                     </div>
                 @endforeach

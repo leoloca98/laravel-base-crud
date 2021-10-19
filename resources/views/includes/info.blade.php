@@ -6,8 +6,8 @@
             <span class="bot-text">VIEW GALLERY</span>
         </div>
     </div>
-    <div class="container p-center">
-        <div class="row">
+    <div class="container p-center justify-content-end align-items-end">
+        <div class="row-info">
             <div class="col-8">
                 <h1 class="fs-25 uppercase text-details-color">{{ $comic->title }}</h1>
                 <div class="status-row text-white">
@@ -21,13 +21,20 @@
                 </div>
                 <p class="my-lh">{{ $comic->description }}</p>
             </div>
+            <div class="col-4">
+                <span class="text-right bold">ADVERTISEMENT</span>
+                <div class="adv"></div>
+            </div>
         </div>
-    </div>
-
-    <div>
-        {{-- Button back
-        Button edit
-        Button delete --}}
+        <a href="{{ route('comics.create') }}">
+            <button class="btn btn-success text-white clickable">ADD</button>
+        </a>
+        <a href="{{ route('comics.edit', $comic->id) }}" class="mx-3">
+            <button class="btn btn-warning text-white clickable">EDIT</button>
+        </a>
+        <a href="{{ route('comics.destroy', $comic->id) }}">
+            <button class="btn btn-danger text-white clickable">DELETE</button>
+        </a>
     </div>
 
 </div>
