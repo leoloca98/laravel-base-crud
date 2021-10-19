@@ -27,8 +27,6 @@ Cose da aggiungere all'esercizio
 
 */
 
+Route::resource('comics', 'ComicController');
 
 Route::get('/', 'ComicController@index')->name('comics.index');
-Route::get('/comics/{id}', 'ComicController@show')->name('comics.show');
-
-Route::resource('comics', 'ComicController');

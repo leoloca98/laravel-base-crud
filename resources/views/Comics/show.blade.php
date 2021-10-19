@@ -29,4 +29,16 @@
 @endsection
 @section('content')
     @include('includes.info', $comic)
-@endsection --}}
+@endsection
+@section('scripts')
+    <script>
+        const deleteButtons = document.querySelectorAll('.delete-button');
+        deleteButtons.forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDEfault();
+                const conf = confirm('Are you sure you want to delete this post?');
+                if (conf) this.submit();
+            });
+        });
+    </script>
+@endsection
