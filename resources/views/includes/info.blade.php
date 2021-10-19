@@ -27,14 +27,16 @@
             </div>
         </div>
         <a href="{{ route('comics.create') }}">
-            <button class="btn btn-success text-white clickable">ADD</button>
+            <input type="submit" class="btn btn-success text-white clickable" value="CREATE">
         </a>
         <a href="{{ route('comics.edit', $comic->id) }}" class="mx-3">
-            <button class="btn btn-warning text-white clickable">EDIT</button>
+            <input type="submit" class="btn btn-warning text-white clickable" value="EDIT">
         </a>
-        <a href="{{ route('comics.destroy', $comic->id) }}">
-            <button class="btn btn-danger text-white clickable">DELETE</button>
-        </a>
+        <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+            @csrf
+            @method('DELETE')
+            <input type="submit" class="btn btn-danger text-white clickable delete-button" value="DELETE">
+        </form>
     </div>
 
 </div>
