@@ -61,7 +61,7 @@ class ComicController extends Controller
         // $newComic->slug = Str::slug($newComic->title, '-');
         $newComic->save();
 
-        return redirect()->route('comics.show', compact('newComic'));
+        return redirect()->route('comics.index', compact('newComic'));
     }
 
     /**
@@ -99,16 +99,16 @@ class ComicController extends Controller
         $request->validate(
             [
                 'title' => 'required|string|unique:comics|min:5',
-                'description' => 'required|string|min:5',
-                'thumb' => 'required|string|unique:comics|min:5',
+                'description' => 'string|min:0',
+                'thumb' => 'string|min:5',
                 'price' => 'required|integer',
                 'type' => 'required|string|min:2'
             ],
             [
-                'required' => 'Il campo :attribute è obbligatorio',
-                'min' => 'Il minimo dei caratteri è :attribute',
-                'title.unique' => 'Il titolo esiste già',
-                'thumb.unique' => 'L\'immagine esiste già'
+                'required' => 'The :attribute is required',
+                'min' => 'Min number of characthers is :attribute',
+                'title.unique' => 'The title already exist, change it',
+                'thumb.unique' => 'The image already exist, change it'
             ]
         );
 
